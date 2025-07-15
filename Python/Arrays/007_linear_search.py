@@ -3,13 +3,11 @@ arr=[12,4,5,2,8,3]
 n=len(arr)
 target_value=int(input("Enter the Value to search:"))
 element_caught=False
-target_index=-1
 for i in range(n):
     if(arr[i]==target_value):
         element_caught=True
         target_index=i
-        break
-        
+        break 
 if(element_caught==True):
     print(f"\nElement {target_value} found at index:{target_index}")
 else:
